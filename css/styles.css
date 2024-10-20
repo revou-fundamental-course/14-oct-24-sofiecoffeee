@@ -16,7 +16,7 @@ nav {
 }
 
 nav>a{
-    border: 1px solid;
+    border: 1px;
     padding: 6px;
     text-decoration: none;
     color:#7E60BF;
@@ -27,6 +27,7 @@ nav>a{
     background-size: cover;
     background-position: center;
 }
+
 footer>div
 {text-align: center;
     font-size: small;
