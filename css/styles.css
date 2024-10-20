@@ -5,8 +5,8 @@
 }
 
 .logo-icon {
-    height: 50px;
-    width: 50px;
+    height: 60px;
+    width: 60px;
     background-image: url(../assets/logo.png);
     background-size: cover;
     background-position: center;
@@ -17,7 +17,17 @@ nav {
 
 nav>a{
     border: 1px solid;
-    padding: 8px;
+    padding: 6px;
     text-decoration: none;
     color:#7E60BF;
+}
+.Home {
+    padding: 250px;
+    background-image: url(../assets/banner1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+footer>div
+{text-align: center;
+    font-size: small;
 }
