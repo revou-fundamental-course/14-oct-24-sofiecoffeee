@@ -16,13 +16,13 @@ nav {
 }
 
 nav>a{
-    border: 1px solid;
-    padding: 6px;
+    border: 1px;
+    padding: 8px;
     text-decoration: none;
     color:#7E60BF;
 }
 .Home {
-    padding: 250px;
+    padding: 300px;
     background-image: url(../assets/banner1.jpg);
     background-size: cover;
     background-position: center;
