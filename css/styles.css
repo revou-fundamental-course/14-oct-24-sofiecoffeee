@@ -2,12 +2,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #7E60BF; 
 }
 
 .logo-icon {
-    height: 60px;
-    width: 60px;
-    background-image: url(../assets/logo.png);
+    height: 80px;
+    width: 80px;
+    background-image: url(../assets/SOFIA_HAN.-removebg-preview.png);
     background-size: cover;
     background-position: center;
 }
@@ -17,17 +18,73 @@ nav {
 
 nav>a{
     border: 1px;
-    padding: 8px;
+    padding: 10px;
     text-decoration: none;
-    color:#7E60BF;
+    font: message-box;
+    color: whitesmoke
 }
-.Home {
-    padding: 400px;
-    background-image: url(../assets/banner1.jpg);
+
+.welcome {
+    display: flex;
+    align-content: stretch;
+    justify-content: center;
+    font: message-box;
+    color: #7E60BF;
+}
+.banner1 {
+    border: 1px;
+    height: 500px;
+    width: 1500px;
+    background-image: url(../assets/banner2.jpg);
     background-size: cover;
     background-position: center;
+
 }
+
+.main-profile {
+    display: flex;
+    align-content: stretch;
+    justify-content: center;
+    font: message-box;
+    color: #7E60BF;
+}
+ .display-picture {
+    height: 300px;
+    width: 300px;
+    background-image: url(../assets/DP_Sofia.jpg);
+    border-radius: 50%;
+ }
+
+ .blank-space {
+    height: 300px;
+    width: 100px;
+ }
+
+ .contains {
+    height: 300px;
+    width: 800px;
+    font: message-box;
+    text-align: justify;
+    font-weight: lighter;
+    color: #7E60BF;
+ }
+
+ .table-profile {
+    display: flex;
+    align-content: stretch;
+    justify-content: center;
+    align-items: center;
+ }
+
 footer>div
 {text-align: center;
     font-size: small;
+}
+
+.portofolio {
+    display: flex;
+    align-content: stretch;
+    justify-content: center;
+    font: message-box;
+    color: #7E60BF;
 }
