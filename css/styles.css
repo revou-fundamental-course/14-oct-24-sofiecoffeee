@@ -1,13 +1,27 @@
+html, body {
+    margin: 0;
+    padding: 5px;
+    box-sizing: border-box;
+}
+    hr {
+        border: none;
+        height: 0.5px;
+        background-color: #F6CEFC;
+        margin: 8px 0;
+}
+
 .main-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 20px;
+    padding: 0px 40px;
 }
 
 .logo-icon {
-    height: 60px;
-    width: 60px;
-    background-image: url(../assets/logo.png);
+    height: 80px;
+    width: 80px;
+    background-image: url(../assets/logo_violet.png);
     background-size: cover;
     background-position: center;
 }
@@ -17,18 +31,130 @@ nav {
 
 nav>a{
     border: 1px;
-    padding: 6px;
+    padding: 10px;
     text-decoration: none;
-    color:#7E60BF;
+    font: message-box;
 }
-.Home {
-    padding: 250px;
-    background-image: url(../assets/banner1.jpg);
-    background-size: cover;
-    background-position: center;
+
+.welcome {
+    display:flex;
+    align-content: stretch;
+    justify-content: center;
+    font: message-box;
+    color: #7E60BF;
+}
+
+.banner-1 {
+    height: 400px;
+    width: 100%;
+}
+
+.main-profile {
+    display: flex;
+    align-content: stretch;
+    justify-content: center;
+    font: message-box;
+    color: #7E60BF;
+}
+
+.about-me {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 80px;
+    padding: 0px 30px;
+    color: #7E60BF;
+}
+
+.profile-pict {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+.profile {
+        font-size: 14px;
+        text-align: justify;
+        font: message-box;
+        line-height: 24px;
+        margin: 16px 0;
+}
+
+ .portofolio {
+    display: flex;
+    align-content: stretch;
+    justify-content: center;
+    font: message-box;
+    color: #7E60BF;
+}
+
+.porto-exp {
+    display: block;
+    align-items: center;
+    text-align: center;
+    font: message-box;
+    line-height: 24px;
+    margin: 10px 5px;
+    color: #7E60BF;
+}
+
+.portofolio-img {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.porto-data {
+    height: 270px;
+    width: 480px;
+    border-radius: 5%;
+    align-items: center;
+    text-align: center;
+    font: message-box;
+    line-height: 24px;
+    margin: 10px 5px;
+    color: #7E60BF;
+}
+
+.text-porto-data {
+    text-align: center;
+    padding: 0px 60px;
+}
+
+.porto-mkt {
+    height: 270px;
+    width: 480px;
+    border-radius: 5%;
+    align-items: center;
+    text-align: center;
+    font: message-box;
+    line-height: 24px;
+    margin: 10px 5px;
+    color: #7E60BF;
+}
+
+.text-porto-mkt {
+    text-align: center;
+    padding: 0px 60px;
+}
+
+
+.contact-me {
+    display: flex;
+    align-content: stretch;
+    justify-content: center;
+    font: message-box;
+    color: #7E60BF;
+}
+
+.container {
+    text-align:left;
+    text-align: justify;
+    font: message-box;
 }
 
 footer>div
 {text-align: center;
     font-size: small;
 }
+
