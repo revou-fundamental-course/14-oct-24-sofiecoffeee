@@ -1,14 +1,27 @@
+html, body {
+    margin: 0;
+    padding: 5px;
+    box-sizing: border-box;
+}
+    hr {
+        border: none;
+        height: 0.5px;
+        background-color: #F6CEFC;
+        margin: 8px 0;
+}
+
 .main-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #7E60BF; 
+    gap: 20px;
+    padding: 0px 40px;
 }
 
 .logo-icon {
     height: 80px;
     width: 80px;
-    background-image: url(../assets/SOFIA_HAN.-removebg-preview.png);
+    background-image: url(../assets/logo_violet.png);
     background-size: cover;
     background-position: center;
 }
@@ -21,24 +34,19 @@ nav>a{
     padding: 10px;
     text-decoration: none;
     font: message-box;
-    color: whitesmoke
 }
 
 .welcome {
-    display: flex;
+    display:flex;
     align-content: stretch;
     justify-content: center;
     font: message-box;
     color: #7E60BF;
 }
-.banner1 {
-    border: 1px;
-    height: 500px;
-    width: 1500px;
-    background-image: url(../assets/banner2.jpg);
-    background-size: cover;
-    background-position: center;
 
+.banner-1 {
+    height: 400px;
+    width: 100%;
 }
 
 .main-profile {
@@ -48,43 +56,69 @@ nav>a{
     font: message-box;
     color: #7E60BF;
 }
- .display-picture {
-    height: 300px;
-    width: 300px;
-    background-image: url(../assets/DP_Sofia.jpg);
-    border-radius: 50%;
- }
 
- .blank-space {
-    height: 300px;
-    width: 100px;
- }
-
- .contains {
-    height: 300px;
-    width: 800px;
-    font: message-box;
-    text-align: justify;
-    font-weight: lighter;
+.about-me {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 80px;
+    padding: 0px 30px;
     color: #7E60BF;
- }
+}
 
- .table-profile {
+.profile-pict {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+.profile {
+        font-size: 14px;
+        text-align: justify;
+        font: message-box;
+        line-height: 24px;
+        margin: 16px 0;
+}
+
+ .portofolio {
     display: flex;
     align-content: stretch;
     justify-content: center;
+    font: message-box;
+    color: #7E60BF;
+}
+
+.porto-exp {
+    display: block;
     align-items: center;
- }
+    text-align: center;
+    font: message-box;
+    line-height: 24px;
+    margin: 10px 5px;
+    color: #7E60BF;
+}
+
+.portofolio-img {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-me {
+    display: flex;
+    align-content: stretch;
+    justify-content: center;
+    font: message-box;
+    color: #7E60BF;
+}
+
+.container {
+    text-align:left;
+    text-align: justify;
+}
 
 footer>div
 {text-align: center;
     font-size: small;
 }
 
-.portofolio {
-    display: flex;
-    align-content: stretch;
-    justify-content: center;
-    font: message-box;
-    color: #7E60BF;
-}

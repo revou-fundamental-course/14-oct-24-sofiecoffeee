@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sofie Coffee Room</title>
+    <title>Sofia's Room</title>
     <link rel="stylesheet" href="css/styles.css">
-    
     <link rel="shortcut icon" href="assets/favicon_latterart.png" type="image/x-icon">
 
 </head>
@@ -17,57 +16,58 @@
          
          <!-- Navigasi-->
          <nav>
-         <a href="#">Home</a>
-         <a href="#">Profile</a>
-         <a href="#">Portofolio</a>
-         <a href="#">Contacts</a>
+         <a href="#"><h3>Home</h3></a>
+         <a href="#"><h3>Profile</h3></a>
+         <a href="#"><h3>Portofolio</h3></a>
+         <a href="#"><h3>Contacts</h3></a>
          </nav>
     </header>
     <hr />
-    
+
     <!-- Contents -->
     <main>
-        <!--Section Home-->
-        <header>
-            <div class="welcome">
-                <p><h2>Welcome to my room,🍨︴<span id="guest_name">"Name"</span>✰</h2></p>
-                </div>
-        <hr />
+        <!--Profile-->
+        <section>
+        <!--Welcomer Message-->
+        <div class="welcome">
+            <p><h2>Welcome to my room,🍨︴<span id="guest_name">"Name"</span>✰</h2></p>
+            </div>
 
-        <div class="banner1"></div>
-        <div class="banner2"></div>
-        <div class="banner3"></div>
-    </header>
-     <hr />
+        <!--Main banner-->
+        <div>
+            <img class="banner-1" src= "assets/banner-2.jpg"/>    
+        </div>
+        <hr/>
 
          <!-- Section Profile -->
          <section>
-            <!-- Profile Picture -->
             <header>
                 <div class="main-profile"><h2>Profile</h2></div>
                 <hr />
                 <br />
-
-             <table class="table-profile">
-                <tr>
-                    <td class="display-picture"><td>
-
-                    <td class="blank-space"></td>
-
-                    <td class="contains"> 
-                        <p><h4>Hello! Thanks for visiting my page</h4></p>
-                        <p>I am Sofia. A creative, empathetic, value-driven, and an adapter problem solver. Experienced in social media and growth marketing positions, 
-                            in addition to customer service in a tech company, I am eager to impact any professional projects with a proven track in creative research, planning, 
-                            and analyzing marketing or campaign activity results for making an impact.</p>
-                        <p><h4>Please take a look!</h4></p>
-                    </td>
-                </tr>
-             </table>
             </header>
-         </section>
-         <br />
-         <hr />
 
+        <!--About me-->
+         <div class ="about-me">
+            
+         <!-- Profile Picture--> 
+         <img class="profile-pict" src="assets/DP_Sofia.jpg"/>
+
+         <!-- My profile --> 
+         <article class="profile">
+            <p>Hello, I am Sofia.</p>
+            <p>creative, empathetic, value-driven, and an adapter problem solver. 
+                Experienced in social media and growth marketing positions, in addition to customer 
+                service in a tech company, I am eager to impact any professional projects
+                with a proven track in creative research, planning, and analyzing 
+                marketing or campaign activity results for making an impact.</p>
+                
+                <p>Currently, I'm open to work or collaboration! Let's discuss.</p>
+            </article>
+        </section>
+            <br/>
+            <hr/>
+   
          <!-- Section Portofolio -->
           <section>
             <header>
@@ -75,39 +75,82 @@
                 <hr />
                 <br />
             </header>
-          </section>
+
+        <!-- Portofolio explanation -->
+         <article class="porto-exp"> 
+            <p>To increase my job opportunities in this challenging year, I took the initiative to meet the requirements of the companies that I have not fulfilled during my career. 
+                Therefore, I started my 'Upskill Marathon' program by enrolling in three mini courses from RevoU, starting on September 16, 2024. 
+                Here is the project In RevoU Data Analytics & Digital Marketing Mini Class I have been working on for the past 4 weeks.
+            </p>
+
+            <p><h3>Let's check this out!</h3></p>
+        
+            <!-- Portofolio Image-->
+        
+        <div class="portofolio-img">
+
+            <div class="porto-1">
+            <img class="porto-data" src="assets/RevoU Data Analytics.jpg"/>
+            <p> asrtrtyuiop </p>
+            </div>
+
+            <div class="porto-2">
+                <img class="porto-mkt" src="assets/RevoU_Marketing.jpg"/>
+                <p> asrtrtyuiop </p>
+                </div>
+       </div>
+
+
+         </section>
+         <hr />
+
+
 
           <!-- Section Contacts -->
            <section>
-            <header class="header-center">
+            <header class="contact-me">
                <h2>Contact Me</h2>
                 </header>
-                <div class="message-container">
+                <hr />
+                <br/>
+                <br/>
+
             <!-- Form Question -->
-                <div>
-                    <label for="input-name">Nama :</label>
-                    <input type="text" id="input-name" placeholder="Nama">
-                </div>
+                <div class="container">
+                    <form action="#">
+                    <table>
+                        <tr>
+                            <td>Nama</td>
+                            <td>:</td>
+                            <td><input type="text"></td>
+                        </tr>
 
-                <div>
-                    <label for="input-date">Tanggal lahir</label>
-                    <input type="date" id="input-date">
-                </div>
+                        <tr>
+                            <td>Tanggal lahir</td>
+                            <td>:</td>
+                            <td><input type="date"></td>
+                        </tr>
 
-                <div>
-                    <label>Jenis Kelamin</label>
-                    <input type="radio" id="male" name="input-gender" value="Laki-laki">
-                    <label for="male">Laki-laki</label>
-                    <input type="radio" id="female"name=ïnput-gender" value="Perempuan">
-                    <label for="female">Perempuan</label>
+                        <tr>
+                            <td>Jenis kelamin</td>
+                            <td>:</td>
+                            <td><input type="radio" name="sex"> Laki-laki
+                                <input type="radio" name="sex"> Perempuan
+                            </td>
+                        </tr>
 
-                <div>
-                    <label for="input-message">Pesan: </label>
-                    <textarea name="input-messages"id="input-messages" placeholder="Pesan">
-                </textarea>
-            <br>
-                <input type="submit">
-            </br>
+                        <tr>
+                            <td>Pesan</td>
+                            <td>:</td>
+                            <td><textarea></textarea>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td><input type="submit" value="Submit"></td>
+                        </tr>
+
+                        </table>
                 </div>
             </form>
     </main>
