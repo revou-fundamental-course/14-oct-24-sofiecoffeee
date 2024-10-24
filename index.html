@@ -16,34 +16,32 @@
          
          <!-- Navigasi-->
          <nav>
-         <a href="#"><h3>Home</h3></a>
-         <a href="#"><h3>Profile</h3></a>
-         <a href="#"><h3>Portofolio</h3></a>
-         <a href="#"><h3>Contacts</h3></a>
+         <a href="#section-home"><h3>Home</h3></a>
+         <a href="#section-profile"><h3>Profile</h3></a>
+         <a href="#section-portofolio"><h3>Portofolio</h3></a>
+         <a href="#section-contacts"><h3>Contacts</h3></a>
          </nav>
     </header>
     <hr />
 
     <!-- Contents -->
     <main>
-        <!--Profile-->
-        <section>
-        <!--Welcomer Message-->
+        <!--Section Home -->
+    <section id="section-home"></section>
+        
+        <!-- Welcome message -->
         <div class="welcome">
             <p><h2>Welcome to my room,🍨︴<span id="guest_name">"Name"</span>✰</h2></p>
             </div>
-
-        <!--Main banner-->
-        <div>
-            <img class="banner-1" src= "assets/banner-2.jpg"/>    
-        </div>
-        <hr/>
+        <!-- Banner -->
+        <img class="banner-1" src= "assets/banner-2.jpg"/>    
+    </section>
+    <hr />
 
          <!-- Section Profile -->
-         <section>
+         <section id="section-profile">
             <header>
                 <div class="main-profile"><h2>Profile</h2></div>
-                <hr />
                 <br />
             </header>
 
@@ -55,119 +53,114 @@
 
          <!-- My profile --> 
          <article class="profile">
-            <p>Hello, I am Sofia.</p>
-            <p>creative, empathetic, value-driven, and an adapter problem solver. 
+            <p>Hello, i am Sofia. 
+            <br>
+            <br>creative, empathetic, value-driven, and an adapter problem solver. 
                 Experienced in social media and growth marketing positions, in addition to customer 
                 service in a tech company, I am eager to impact any professional projects
                 with a proven track in creative research, planning, and analyzing 
-                marketing or campaign activity results for making an impact.</p>
-                
-                <p>Currently, I'm open to work or collaboration! Let's discuss.</p>
+                marketing or campaign activity results for making an impact.
+            <br>
+            <br>
+            I am open to work! Let's Connect
+            </p>
+            
             </article>
         </section>
             <hr/>
    
          <!-- Section Portofolio -->
-          <section>
+          <section id="section-portofolio">
             <header>
                 <div class="portofolio"><h2>Portofolio</h2></div>
-                <hr />
-                <br />
             </header>
 
         <!-- Portofolio explanation -->
-         <article class="porto-exp"> 
+         <div class="porto-exp"> 
             <p>To increase my job opportunities in this challenging year, I took the initiative to meet the requirements of the companies that I have not fulfilled during my career. 
                 Therefore, I started my 'Upskill Marathon' program by enrolling in three mini courses from RevoU, starting on September 16, 2024. 
                 Here is the project In RevoU Data Analytics & Digital Marketing Mini Class I have been working on for the past 4 weeks.
             </p>
-
             <p><h3>Let's check this out!</h3></p>
-            <br />
-            <br />
-        
-            <!-- Portofolio Image-->
-        
-        <div class="portofolio-img">
-
-            <div class="porto-1">
+        </div>
+        <br/>
+        <div class="portofolio">
             <img class="porto-data" src="assets/RevoU_Data Analytics.jpg"/>
-            <p class="text-porto-data"> 
-                in 10-days of comprehensive essential introduction of data analytics bootcamp,
+            <img class="porto-mkt" src="assets/RevoU_Marketing.jpg"/>
+        </div>
+
+        <div class="porto-text">
+            <article>In 10-days of comprehensive essential introduction of data analytics bootcamp,
                 I sucessfully organize the data  by using google Big Query for 
-                processing data on SQL, and visualizating the data by using Tableau for Publics.
-                 </p>
-            </div>
+                processing data on SQL, and visualizating the data by using Tableau for Publics.</article>
 
-            <div class="porto-2">
-                <img class="porto-mkt" src="assets/RevoU_Marketing.jpg"/>
-                <p class="text-porto-mkt"> 
-                    in 10-days of comprehensive essential introduction of data analytics bootcamp,
-                    I sucessfully organize the marketing (KOL) influencer collaboration brief by
-                    define brand study case brand objective and goals to match the influencers. Then
-                    organize the negotiations strategy for choosing best KOL for our brand.</p>
-                </div>
-       </div>
-
-
-         </section>
-         <hr />
+            <article>In 10-days of comprehensive essential introduction of data analytics bootcamp,
+                I sucessfully organize the marketing (KOL) influencer collaboration brief by
+                define brand study case brand objective and goals to match the influencers. Then
+                organize the negotiations strategy for choosing best KOL for our brand.</article>
+        </div>
+        <hr />
 
           <!-- Section Contacts -->
-           <section>
+           <section id="section-contacts">
             <header class="contact-me">
                <h2>Contact Me</h2>
                 </header>
-                <hr />
-                <br/>
                 <br/>
 
             <!-- Form Question -->
                 <div class="container">
-                    <form action="#">
+                    <form class="form-input">
                     <table>
                         <tr>
                             <td>Nama</td>
                             <td>:</td>
-                            <td><input type="text"></td>
+                            <td><input type="text" id="input-name" placeholder="Nama" required></td>
                         </tr>
 
                         <tr>
                             <td>Tanggal lahir</td>
                             <td>:</td>
-                            <td><input type="date"></td>
+                            <td><input type="date" id="input-date"></td>
                         </tr>
 
                         <tr>
                             <td>Jenis kelamin</td>
                             <td>:</td>
-                            <td><input type="radio" name="sex"> Laki-laki
-                                <input type="radio" name="sex"> Perempuan
+                            <td><input type="radio" id="male" name="input-sex" value="Laki=laki">
+                                <input type="radio" id="female" name="input-sex" value="Perempuan">
                             </td>
                         </tr>
 
                         <tr>
                             <td>Pesan</td>
                             <td>:</td>
-                            <td><textarea></textarea>
+                            <td><textarea name="input-message" id="input-messages" placeholder="Pesan kamu"></textarea>
                             </td>
                         </tr>
 
                         <tr>
-                            <td><input type="submit" value="Submit"></td>
-                        </tr>
-
+                        <td><button type="Submit">Submit</button><td>
+                        <tr>
                         </table>
-                </div>
-            </form>
-    </main>
+                </form>
+
+        <!-- Form Output --> 
+            <div class="form-output">
+            <p>Nama: <span id="sender-full-name"></span></p>
+            <p>Tanggal Lahir: <span id="sender-birth-date"></span></p>
+            <p>Jenis Kelamin: <span id="sender-sex"></span></p>
+            <p>Pesan: <span id="sender-messages"></span></p>
+            </div>
+        </div>
+        </main>
+    
+    
     <!-- Copyright -->
     <footer>
         <hr/>
         <div> © SOFIA HAN 2024 </div>
     </footer>
-
-    
+    <script src="js/script.js"></script>
 </body>
 </html>
-
