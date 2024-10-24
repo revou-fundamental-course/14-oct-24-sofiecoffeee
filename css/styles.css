@@ -142,26 +142,18 @@ article {
 }
 
 .container {
-    display: flex;
+    display: flex
+    text-align:left;
     text-align: justify;
     font: message-box;
+}
+
+.result {
+    margin: 0;
+    display: flex;
     justify-content: space-around;
+    align-items: flex-start;
 }
-
-.form-input {
-    padding: 20px;
-    margin: 20px;
-    border: 1px solid;
-    word-spacing: 2px;
-}
-
-.form-output {
-padding: 20px;
-margin: 20px;
-width: 288px;
-border: 1px solid;
-}
-
 
 footer>div
 {text-align: center;
