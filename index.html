@@ -31,10 +31,12 @@
         
         <!-- Welcome message -->
         <div class="welcome">
-            <p><h2>Welcome to my room,🍨︴<span id="guest_name">"Name"</span>✰</h2></p>
+            <p><h2>Welcome to my room,🍨︴<span id="guest_name"></span>✰</h2></p>
             </div>
         <!-- Banner -->
-        <img class="banner-1" src= "assets/banner-2.jpg"/>    
+        <img class="banner banner-1" src= "assets/banner-1.jpg"/>
+        <img class="banner banner-2" src= "assets/banner-2.jpg"/>
+        <img class="banner banner-3" src= "assets/banner-3.jpg"/>     
     </section>
     <hr />
 
@@ -110,7 +112,7 @@
 
             <!-- Form Question -->
                 <div class="container">
-                    <form class="form-input">
+                    <form class="form-input" name="message_form" onsubmit="return false;">
                     <table>
                         <tr>
                             <td>Nama</td>
@@ -127,8 +129,11 @@
                         <tr>
                             <td>Jenis kelamin</td>
                             <td>:</td>
-                            <td><input type="radio" id="male" name="input-sex" value="Laki=laki">
-                                <input type="radio" id="female" name="input-sex" value="Perempuan">
+                            <td>
+                            <input type="radio" id="male" name="input-sex" value="Laki=laki">
+                                <label for="male">Laki-laki</label>
+                            <input type="radio" id="female" name="input-sex" value="Perempuan">
+                            <label for="female">Perempuan</label>
                             </td>
                         </tr>
 
@@ -140,16 +145,16 @@
                         </tr>
 
                         <tr>
-                        <td><button type="Submit">Submit</button><td>
+                        <td><button type="Submit" onclick="validateForm()">Submit</button><td>
                         <tr>
                         </table>
                 </form>
 
             <!-- Form Output -->
                 <div class="form_output">
-                    <p>Nama : <span id="sender-full-name"></span></p>
+                    <p>Nama : <span id="sender-name"></span></p>
                     <p>Tanggal Lahir : <span id="sender-birth-date"></span></p>
-                    <p>Jenis Kelamin : <span id="sender-gender"></span></p>
+                    <p>Jenis Kelamin : <span id="sender-sex"></span></p>
                     <p>Pesan : <span id="sender-messages"></span></p>
                  </div>
             </div>

@@ -8,8 +8,8 @@ html, body {
         height: 0.5px;
         background-color: #F6CEFC;
         margin: 8px 0;
-}
-
+    }
+        
 .main-header {
     display: flex;
     justify-content: space-between;
@@ -45,6 +45,18 @@ nav>a{
 }
 
 .banner-1 {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.banner-2 {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.banner-3 {
     max-width: 100%;
     height: auto;
     border-radius: 10px;
@@ -127,11 +139,9 @@ article {
 
 .porto-text {
     display: flex;
-    align-content: stretch;
-    justify-content: center;
+    justify-content: flex-end;
     font: message-box;
     color: #7E60BF;
-
 }
 .contact-me {
     display: flex;
