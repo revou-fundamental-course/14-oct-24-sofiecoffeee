@@ -142,17 +142,24 @@ article {
 }
 
 .container {
-    display: flex
-    text-align:left;
-    text-align: justify;
+    display: flex;
+    justify-content: space-evenly;
     font: message-box;
+    
 }
 
-.result {
-    margin: 0;
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
+.form-input {
+    border: 1px solid;
+    margin: 20px;
+    padding: 20px;
+}
+
+.form_output {
+    border: 1px solid;
+    width: 280px;
+    height: 210px;
+    margin: 20px;
+    padding: 20px;
 }
 
 footer>div
