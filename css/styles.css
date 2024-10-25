@@ -124,12 +124,10 @@ nav>a:active {
     line-height: 24px;
 }
 
-
  .portofolio {
     display: flex;
     align-content: stretch;
     justify-content: center;
-    text-align: justify;
     font: message-box;
     color: #7E60BF;
 }
@@ -139,7 +137,7 @@ nav>a:active {
     margin: 16px;
     padding: 0px 20px;
     align-items: center;
-    text-align: justify;
+    text-align: center;
     font: message-box;
     line-height: 24px;
     color:#7E60BF;
@@ -168,12 +166,14 @@ nav>a:active {
 }
 
 .text1 {
-    padding-left:40px;
+    max-width: 45%;
+    padding-left: 40px;
     text-align: justify;
 }
 
 .text2 {
-    padding-left: 50px;
+    max-width: 47%;
+    padding-right: 20px;
     text-align: justify;
 }
 
@@ -185,12 +185,18 @@ nav>a:active {
     color: #7E60BF;
 }
 
-
+@media only screen and (max-width: 600px) {
+    .container  {
+        flex-direction: column;
+    }
+}
 
 .container {
     display: flex;
     justify-content: space-evenly;
     font: message-box;
+    color: whitesmoke;
+    background-color:#b6aad8; 
     
 }
 
@@ -198,14 +204,18 @@ nav>a:active {
     border: 1px solid;
     margin: 20px;
     padding: 20px;
+    color: black;
+    border-color: #7E60BF;
 }
 
 .form_output {
     border: 1px solid;
-    width: 280px;
-    height: 210px;
+    width: 400px;
+    height: 200px;
     margin: 20px;
     padding: 20px;
+    color: black;
+    border-color: #7E60BF;
 }
 
 footer>div
