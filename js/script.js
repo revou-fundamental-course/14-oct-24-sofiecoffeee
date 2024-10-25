@@ -35,7 +35,7 @@ function showSlide(index) {
     }
 
     //auto-run banner
-    setInterval(() => nextSlide(1), 1000);
+    setInterval(() => nextSlide(1), 2000);
 
 function validateForm() {
     let inputName = document.getElementById('input-name').value;
@@ -57,9 +57,9 @@ function validateForm() {
     document.getElementById('sender-name').innerHTML = inputName;
     document.getElementById('sender-birth-date').innerHTML = inputDate;
     document.getElementById('sender-sex').innerHTML = inputSex;
-    document.getElementById('sender-messages').innerHTML = InputMessages;
+    document.getElementById('sender-messages').innerHTML = inputMessages;
 
-    //aleert ('Sukses submit');
+    //allert ('Sukses submit');
 }
 
 console.log(inputName);

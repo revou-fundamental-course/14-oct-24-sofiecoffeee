@@ -1,55 +1,66 @@
 html, body {
     margin: 0;
-    padding: 5px;
+    padding: 0;
     box-sizing: border-box;
 }
-    hr {
+    
+hr {
         border: none;
         height: 0.5px;
-        background-color: #F6CEFC;
+        background-color: #b6aad8;
         margin: 8px 0;
     }
-@media only screen and (max-width: 600px)
-{
-    .main-header {
+
+    @media only screen and (max-width: 600px) {
+        .main-header {
             flex-direction: column;
         }
-
-    nav{
-            width: 100%;
-            flex-direction: column; 
-             }
-    nav>a{
-            display: flex;
-            justify-content: center;
-            }
-
-}
+    }
 .main-header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    gap: 20px;
-    padding: 0px 40px;
+    background-color: #b6aad8;
+    padding:10px 
 }
 
 .logo-icon {
-    height: 80px;
-    width: 80px;
-    background-image: url(../assets/logo_violet.png);
+    height: 60px;
+    width: 60px;
+    background-image: url(../assets/logo_white.png);
     background-size: cover;
     background-position: center;
 }
+
+@media only screen and (max-width: 600px) {
+    nav {
+            flex-direction: column;
+        }
+    }
+
 nav {
     display: flex;
+    padding: 10px;
 }
 
 nav>a{
     border: 1px;
-    padding: 10px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    background-color: whitesmoke;
+    border-radius: 10px;
+    padding:5px;
+    margin:5px;
     text-decoration: none;
     font: message-box;
+    text-align: center;
+    color: #7E60BF;
+    cursor: pointer;
+    transition: color 0.3s;
 }
+
+nav>a:active {
+    background-color: #ffe49f;
+}
+
 
 .welcome {
     display: flex;
@@ -62,19 +73,16 @@ nav>a{
 .banner-1 {
     max-width: 100%;
     height: auto;
-    border-radius: 10px;
 }
 
 .banner-2 {
     max-width: 100%;
     height: auto;
-    border-radius: 10px;
 }
 
 .banner-3 {
     max-width: 100%;
     height: auto;
-    border-radius: 10px;
 }
 
 .main-profile {
@@ -89,61 +97,60 @@ nav>a{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 80px;
     padding: 0px 30px;
-    color: #7E60BF;
+    color: #fff;
+    background-color: #b6aad8;
 }
 
+@media only screen and (max-width: 600px) {
+        .about-me {
+            flex-direction: column;
+            text-align: justify;
+        }
+    }
+
 .profile-pict {
+    padding: 20px;
+    max-width: 100%;
     height: 200px;
-    width: 200px;
     border-radius: 50%;
 }
 
 .profile {
-        font-size: 14px;
-        text-align: justify;
-        font: message-box;
-        line-height: 24px;
-        margin: 16px 0;
+    margin: 16px 0;
+    padding: 10px
+    text-align: justify;
+    font: message-box;
+    line-height: 24px;
 }
+
 
  .portofolio {
     display: flex;
     align-content: stretch;
     justify-content: center;
+    text-align: justify;
     font: message-box;
     color: #7E60BF;
 }
 
 .porto-exp {
     display: block;
+    margin: 16px;
+    padding: 0px 20px;
     align-items: center;
-    text-align: center;
+    text-align: justify;
     font: message-box;
     line-height: 24px;
-    margin: 10px 5px;
-    color: #7E60BF;
+    color:#7E60BF;
 }
 
-.porto-data {max-width: 40%;
+.porto-data {
+    max-width: 40%;
     height: auto;
     border-radius: 40px;
     padding: 20px
 }
-
-article {
-    display: flex;
-    align-content: stretch;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font: message-box;
-    line-height: 24px;
-    margin: 20px 20px;
-    color: #7E60BF;
-}
-
 
 .porto-mkt {
     max-width: 40%;
@@ -154,10 +161,22 @@ article {
 
 .porto-text {
     display: flex;
-    justify-content: flex-end;
+    padding: 16px;
+    justify-content: space-around;
     font: message-box;
     color: #7E60BF;
 }
+
+.text1 {
+    padding-left:40px;
+    text-align: justify;
+}
+
+.text2 {
+    padding-left: 50px;
+    text-align: justify;
+}
+
 .contact-me {
     display: flex;
     align-content: stretch;
@@ -165,6 +184,8 @@ article {
     font: message-box;
     color: #7E60BF;
 }
+
+
 
 .container {
     display: flex;
@@ -190,4 +211,7 @@ article {
 footer>div
 {text-align: center;
     font-size: small;
+    padding: 20px;
+    font: small-caption;
+    font-style: italic;
 }
