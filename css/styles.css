@@ -139,10 +139,17 @@ nav>a:active {
     line-height: 24px;
 }
 
- .portofolio {
+.portofolio-head {
     display: flex;
     align-content: stretch;
     justify-content: center;
+    font: message-box;
+    color: #7E60BF;
+}
+
+ .portofolio {
+    display: flex;
+    justify-content: space-between;
     font: message-box;
     color: #7E60BF;
 }
@@ -168,7 +175,7 @@ nav>a:active {
     max-width: 90%;
     height: auto;
     border-radius: 10px;
-    padding-right: 60px;
+    padding-right: 20px;
     padding-left: 20px;
 }
 
@@ -176,14 +183,14 @@ nav>a:active {
     width: 95%;
     height: auto
     border-radius: 10px;
-    padding-left: 20px;
+    padding-left: 10px;
     
 }
 
 .porto-text {
     display: flex;
     padding: 16px;
-    justify-content: space-around;
+    justify-content: space-between;
     font: message-box;
     color: #7E60BF;
 }
@@ -196,8 +203,8 @@ nav>a:active {
 
 .text1 {
     max-width: 45%;
-    padding-left:10px;
-    padding-right:20px;
+    padding-left: 10px;
+    padding-right: 10px;
     text-align: justify;
 }
 
@@ -209,8 +216,8 @@ nav>a:active {
 
 .text2 {
     max-width: 47%;
+    padding-left: 10px;
     padding-right: 20px;
-    padding-right: 5px;
     text-align: justify;
 }
 
