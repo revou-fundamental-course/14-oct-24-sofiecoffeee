@@ -25,15 +25,15 @@ function showSlide(index) {
 
     //hide all images
     let i = 0
-    for (let i = 0; i < listImage.length; i++) {
-        listImage[i].style.visibility = 'hidden';  // Use visibility instead of display
-        listImage[i].style.position = 'absolute';  // Prevent layout shift
-    }
+    while (i < listImage.length) {
+        listImage[i].style.display = 'none';
+       i++;
+     }
 
      //show selector image
-     listImage[indexSlide - 1].style.visibility = 'visible';
-     listImage[indexSlide - 1].style.position = 'relative';  // Reset position for the visible slide
- }
+     listImage[indexSlide - 1].style.display = 'block';
+    }
+
 
     //auto-run banner
     setInterval(() => nextSlide(1), 2000);
