@@ -149,7 +149,7 @@ nav>a:active {
 
  .portofolio {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     font: message-box;
     color: #7E60BF;
 }
@@ -181,10 +181,6 @@ nav>a:active {
 
 .porto-mkt {
     width: 95%;
-    height: auto
-    border-radius: 10px;
-    padding-left: 10px;
-    
 }
 
 .porto-text {
@@ -195,12 +191,6 @@ nav>a:active {
     color: #7E60BF;
 }
 
-@media only screen and (max-width: 600px) {
-    .text1 {
-            flex-direction: column;
-        }
-    }
-
 .text1 {
     max-width: 45%;
     padding-left: 10px;
@@ -208,18 +198,32 @@ nav>a:active {
     text-align: justify;
 }
 
-@media only screen and (max-width: 600px) {
-    .text2 {
-            flex-direction: column;
-        }
-    }
-
 .text2 {
-    max-width: 47%;
+    max-width: 48%;
     padding-left: 10px;
     padding-right: 20px;
     text-align: justify;
 }
+
+@media only screen and (max-width: 600px) {
+    .text1 {
+            flex-direction: column;
+            max-width: 45%;
+            padding-left:10px;
+            padding-right:10px;
+            text-align: left;
+        }
+    }
+
+@media only screen and (max-width: 600px) {
+    .text2 {
+            flex-direction: column;
+            max-width: 47%;
+            padding-left:5px;
+            padding-right:5px;
+            text-align: left;
+        }
+    }
 
 .contact-me {
     display: flex;
@@ -233,6 +237,13 @@ nav>a:active {
     .container  {
         flex-direction: column;
         align-items: center;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #input-name,
+    #input-messages {
+        width: 70%
     }
 }
 
@@ -256,12 +267,14 @@ nav>a:active {
     border-color: #7E60BF;
 }
 
+
+
 td {
     padding: 2px;
 }
 
 button {
-    width: 400%;
+    width: 100%;
 }
 
 .form_output {
